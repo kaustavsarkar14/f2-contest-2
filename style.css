@@ -49,7 +49,7 @@ button:active {
 .table-container {
     overflow-x: scroll;
 }
-::-webkit-scrollbar {
+.table-container::-webkit-scrollbar {
     width: 0;
 }
 table {
