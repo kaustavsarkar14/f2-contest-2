@@ -177,6 +177,6 @@ function sortByGender(){
 // search
 function handleChange(){
     const searchText = input.value.trim()
-    arr = arr.filter(el=>el.first_name.includes(searchText)||el.last_name.includes(searchText)||el.email.includes(searchText))
+    arr = arr.filter(el=>el.first_name.toLowerCase().includes(searchText.toLowerCase())||el.last_name.toLowerCase().includes(searchText.toLowerCase())||el.email.toLowerCase().includes(searchText.toLowerCase()))
     renderTable()
 }
