@@ -28,6 +28,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 1rem;
+    margin-bottom: 2rem;
     row-gap: 5px;
 }
 button {
@@ -45,6 +46,9 @@ button:hover {
 }
 button:active {
     background-color: #242424;
+}
+.buttons>button {
+    width: 14rem;
 }
 .table-container {
     overflow-x: scroll;
@@ -73,4 +77,10 @@ img {
     justify-content: start;
     align-items: center;
     gap: 1rem;
+}
+
+@media screen and (max-width:768px){
+    .buttons>button {
+        width: 10rem;
+    }
 }
